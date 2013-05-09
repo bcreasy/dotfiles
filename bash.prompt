@@ -1,0 +1,17 @@
+# bash.prompt - sets up things for the prompt
+#
+
+GIT_PS1_SHOWDIRTYSTATE=true
+
+export PS1="[\u@\h \w]\$ " # default prompt
+
+if [[ -f /usr/local/share/git-core/contrib/completion/git-prompt.sh ]]; then
+	source /usr/local/share/git-core/contrib/completion/git-prompt.sh
+	export PS1="\n\n[\u@\h \w]\$(__git_ps1)\$ "
+else
+	export PS1="\n\n$PS1"
+fi
+
+if [[ $TERM = xterm* ]]; then
+	PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
+fi

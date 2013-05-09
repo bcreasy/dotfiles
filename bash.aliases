@@ -1,0 +1,6 @@
+# bash.aliases - sets aliases
+#
+
+alias ls="ls -F -G"
+alias telnet="telnet -K"
+alias s="ssh shiori"

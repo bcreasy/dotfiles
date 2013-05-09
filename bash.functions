@@ -1,0 +1,13 @@
+# bash.functions - various bash functions
+#
+
+if [[ -f /usr/local/share/git-core/contrib/completion/git-completion.bash ]]; then
+	source /usr/local/share/git-core/contrib/completion/git-completion.bash
+fi
+
+cdup() {
+	levels=${1-1}
+	while ((levels--)); do
+		cd ..
+	done
+}

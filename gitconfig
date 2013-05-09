@@ -1,0 +1,27 @@
+[user]
+	name = Brian J. Creasy
+	email = genetik@gmail.com
+[branch]
+	autosetuprebase = always
+[core]
+	editor = vim
+	autocrlf = input
+	eol = native
+	pager = less -FXRS
+[color]
+	ui = true
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=local
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	gp = pull --rebase
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	amend = commit --amend
+	cpick = cherry-pick -x -s
+
+	# show files ignored by git
+	ign = ls-files -o -i --exclude-standard
