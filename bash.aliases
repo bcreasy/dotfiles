@@ -6,7 +6,7 @@ alias telnet="telnet -K"
 alias shiori="ssh shiori"
 alias nay="ssh nayuki"
 
-if [[ $HOSTNAME = mai.* ]]; then
+if [ "$(hostname)" = "mai.local" ]; then
 	alias m='cd "/Volumes/media/Music/iTunes/iTunes Media/Music/"'
 	alias a='cd "/Users/genetik/Library/Application Support/Adium 2.0/Users/Default/Logs/AIM.bcreasy123/"'
 fi
