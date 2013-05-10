@@ -6,7 +6,12 @@ GIT_PS1_SHOWDIRTYSTATE=true
 export PS1="[\u@\h \w]\$ " # default prompt
 
 if [[ -f /usr/local/share/git-core/contrib/completion/git-prompt.sh ]]; then
+	# FreeBSD
 	source /usr/local/share/git-core/contrib/completion/git-prompt.sh
+	export PS1="\n\n[\u@\h \w]\$(__git_ps1)\$ "
+elif [[ -f /usr/local/git/contrib/completion/git-prompt.sh ]]; then
+	# MacOS
+	source /usr/local/git/contrib/completion/git-prompt.sh
 	export PS1="\n\n[\u@\h \w]\$(__git_ps1)\$ "
 else
 	export PS1="\n\n$PS1"
