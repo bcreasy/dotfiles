@@ -12,4 +12,6 @@ if [[ -f ~/.dotfiles/bash.prompt ]]; then
 	source ~/.dotfiles/bash.prompt
 fi
 
-
+if [[ -f ~/.bash_local ]]; then
+	source ~/.bash_local
+fi
