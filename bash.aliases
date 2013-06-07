@@ -1,10 +1,19 @@
 # bash.aliases - sets aliases
 #
 
-alias ls="ls -F -G"
+if [[ "$(uname)" = "FreeBSD" ]]; then
+	alias ls="ls -F -G"
+else
+	alias ls="ls -F --color"
+fi
+
 alias telnet="telnet -K"
 alias shiori="ssh shiori"
 alias nay="ssh nayuki"
+alias tree="tree --charset iso-8859 -F -n"
+alias genpass="apg -m 20 -MNCL"
+alias svnblame="echo Ginsburg."
+
 
 if [ "$(hostname)" = "mai.local" ]; then
 	alias m='cd "/Volumes/media/Music/iTunes/iTunes Media/Music/"'
