@@ -13,6 +13,15 @@ elif [[ -f /usr/local/git/contrib/completion/git-prompt.sh ]]; then
 	# MacOS
 	source /usr/local/git/contrib/completion/git-prompt.sh
 	export PS1="\n\n[\u@\h \w]\$(__git_ps1)\$ "
+elif [[ -f /usr/share/git/git-prompt.sh ]]; then
+	# Arch Linux
+	source /usr/share/git/git-prompt.sh
+	if [[ "$(hostname)" = "bcreasy-T520" ]]; then
+		# Workstation
+		export PS1='\n(\[\033[0;36m\]\u\[\033[0m\]@\[\033[0;36m\]\h\[\033[0m\])\[\033[0;36m\]-\[\033[0m\](\[\033[0;36m\]$(date +%Y-%m-%d)\[\033[0m\]:\[\033[0;36m\]\t\[\033[0m\])-\n\[\033[0;36m\](\[\033[0m\]\w\[\033[0;36m\])\[\033[0m\]$(__git_ps1)\[\033[0;36m\]-\[\033[0m\]> '
+	else
+		export PS1="\n\n[\u@\h \w]\$(__git_ps1)\$ "
+	fi
 else
 	export PS1="\n\n$PS1"
 fi
