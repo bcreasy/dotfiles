@@ -2,7 +2,7 @@
 ! URxvt*geometry:                       geometry
 ! URxvt*chdir:                          string
 ! URxvt*reverseVideo:                   boolean
-! URxvt*loginShell:                     boolean
+  URxvt*loginShell:                     true
 ! URxvt*jumpScroll:                     boolean
 ! URxvt*skipScroll:                     boolean
 ! URxvt*pastableTabs:                   boolean
@@ -77,7 +77,7 @@
 ! URxvt*imFont:                         fontname
 ! URxvt*title:                          string
 ! URxvt*iconName:                       string
-! URxvt*saveLines:                      number
+  URxvt*saveLines:                      4096
 ! URxvt*buffered:                       boolean
 ! URxvt*depth:                          number
 ! URxvt*visual:                         number
