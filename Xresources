@@ -66,8 +66,10 @@
 ! URxvt*pointerColor2:                  color
 ! URxvt*borderColor:                    color
 ! URxvt*iconFile:                       file
-  URxvt*font:                           -nil-profont-medium-r-normal--11-110-72-72-c-60-iso8859-1
-  URxvt*boldFont:                       -nil-profont-medium-r-normal--11-110-72-72-c-60-iso8859-1
+!  URxvt*font:                           -nil-profont-medium-r-normal--11-110-72-72-c-60-iso8859-1
+!  URxvt*boldFont:                       -nil-profont-medium-r-normal--11-110-72-72-c-60-iso8859-1
+  URxvt*font:                           -gohu-gohufont-medium-r-normal--11-80-100-100-c-60-iso8859-1
+  URxvt*boldFont:                       -gohu-gohufont-bold-r-normal--11-80-100-100-c-60-iso8859-1
 ! URxvt*italicFont:                     fontname
 ! URxvt*boldItalicFont:                 fontname
 ! URxvt*intensityStyles:                boolean
