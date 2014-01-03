@@ -2,3 +2,4 @@
 
 xset fp+ ~/.dotfiles/fonts/
 xset r rate 250 34
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
