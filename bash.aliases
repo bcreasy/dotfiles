@@ -2,7 +2,8 @@
 #
 
 case "$(uname)" in
-	"Darwin");;
+	"Darwin")
+		alias ls="ls -F -G";;
 	"FreeBSD")
 		alias ls="ls -F -G";;
 	"Linux")
