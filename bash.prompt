@@ -22,6 +22,10 @@ elif [[ -f /usr/share/git/git-prompt.sh ]]; then
 	else
 		export PS1="\n\n[\u@\h \w]\$(__git_ps1)\$ "
 	fi
+elif [[ -f /usr/lib/git-core/git-sh-prompt ]]; then
+	# Ubuntu Linux
+	source /usr/lib/git-core/git-sh-prompt
+	export PS1="\n\n[\u@\h \w]\$(__git_ps1)\$ "
 else
 	export PS1="\n\n$PS1"
 fi
