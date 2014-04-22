@@ -17,6 +17,7 @@ alias sayuri="ssh sayuri"
 alias tree="tree --charset iso-8859 -F -n"
 alias genpass="apg -m 20 -MNCL"
 alias svnblame="echo Ginsburg."
+alias rsync="rsync --progress -h"
 
 
 if [ "$(hostname)" == "mai.local" ]; then
