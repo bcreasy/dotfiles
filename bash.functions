@@ -7,8 +7,8 @@ if [[ -f /usr/local/share/git-core/contrib/completion/git-completion.bash ]]; th
 elif [[ -f /usr/share/doc/git/contrib/completion/git-completion.bash ]]; then
 	source /usr/share/doc/git/contrib/completion/git-completion.bash
 
-elif [[ -f /usr/local/git/contrib/completion/git-completion.bash ]]; then
-	source /usr/local/git/contrib/completion/git-completion.bash
+elif [[ -f /usr/local/etc/bash_completion.d/git-completion.bash ]]; then
+	source /usr/local/etc/bash_completion.d/git-completion.bash
 
 elif [[ -f /usr/share/git/completion/git-completion.bash ]]; then
 	source /usr/share/git/completion/git-completion.bash

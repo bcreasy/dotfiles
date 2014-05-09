@@ -9,9 +9,9 @@ if [[ -f /usr/local/share/git-core/contrib/completion/git-prompt.sh ]]; then
 	# FreeBSD
 	source /usr/local/share/git-core/contrib/completion/git-prompt.sh
 	export PS1="\n\n[\u@\h \w]\$(__git_ps1)\$ "
-elif [[ -f /usr/local/git/contrib/completion/git-prompt.sh ]]; then
+elif [[ -f /usr/local/etc/bash_completion.d/git-prompt.sh ]]; then
 	# MacOS
-	source /usr/local/git/contrib/completion/git-prompt.sh
+	source /usr/local/etc/bash_completion.d/git-prompt.sh
 	export PS1="\n\n[\u@\h \w]\$(__git_ps1)\$ "
 elif [[ -f /usr/share/git/git-prompt.sh ]]; then
 	# Arch Linux
