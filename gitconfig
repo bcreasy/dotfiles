@@ -17,6 +17,7 @@
 	co = checkout
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=local
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold cyan) <%an>%Creset' --abbrev-commit
 	gp = pull --rebase
 	unstage = reset HEAD --
 	last = log -1 HEAD
