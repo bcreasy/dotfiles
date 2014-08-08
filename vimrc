@@ -22,6 +22,7 @@ set background=dark
 colorscheme default
 
 autocmd FileType css set noexpandtab tabstop=4 " i prefer wide tab display in css files
+autocmd FileType ruby set tabstop=2 expandtab " spaces instead of tabs in ruby files
 
 fixdel
 set whichwrap+=<,>,h,l
