@@ -2,6 +2,8 @@
 	name = Brian J. Creasy
 	email = genetik@gmail.com
 	signingkey = BCA64D46
+[commit]
+	gpgsign = true
 [branch]
 	autosetuprebase = always
 [core]
