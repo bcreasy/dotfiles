@@ -27,3 +27,8 @@ autocmd FileType ruby set tabstop=2 expandtab " spaces instead of tabs in ruby f
 fixdel
 set whichwrap+=<,>,h,l
 hi Comment ctermfg=darkmagenta
+
+set cursorline
+hi CursorLine cterm=NONE ctermbg=234 ctermfg=NONE
+autocmd WinEnter * setlocal cursorline
+autocmd WinLeave * setlocal nocursorline
