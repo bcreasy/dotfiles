@@ -18,6 +18,7 @@ set shiftround
 set wildmode=list:longest,full
 set incsearch
 
+set t_Co=256
 set background=dark
 colorscheme default
 
