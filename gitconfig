@@ -27,6 +27,7 @@
 	last = log -1 HEAD
 	amend = commit --amend
 	cpick = cherry-pick -x -s -S
+	su = submodule update
 
 	# show files ignored by git
 	ign = ls-files -o -i --exclude-standard
