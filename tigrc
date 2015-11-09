@@ -1,0 +1,11 @@
+color date white black
+color file white black bold
+color graph-commit white default
+color "index " cyan default
+color diff-stat cyan default
+
+set   main-view = line-number:no \
+                  id:yes \
+                  date:default \
+                  author:email-user \
+                  commit-title:yes,graph,refs,overflow=no

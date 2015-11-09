@@ -4,7 +4,7 @@
 
 dir_dotfiles=$(cd $(dirname "$0"); pwd)
 
-list_dotfiles="profile bash_profile bashrc vimrc gitconfig Xresources xsessionrc"
+list_dotfiles="profile bash_profile bashrc vimrc gitconfig tigrc Xresources xsessionrc"
 
 for dotfile in $list_dotfiles; do
 	if [[ -f ~/.$dotfile ]]; then
