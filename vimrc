@@ -33,3 +33,5 @@ set cursorline
 hi CursorLine cterm=NONE ctermbg=234 ctermfg=NONE
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
+
+autocmd BufRead,BufNew *.md set filetype=markdown
