@@ -1,7 +1,7 @@
 [user]
 	name = Brian J. Creasy
 	email = genetik@caffeine.nu
-	signingkey = c5c41df6
+	signingkey = 0x4C2F9E44C5C41DF6
 [commit]
 	gpgsign = true
 [branch]
