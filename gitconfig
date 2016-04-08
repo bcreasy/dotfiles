@@ -28,6 +28,7 @@
 	amend = commit --amend
 	cpick = cherry-pick -x -s -S
 	su = submodule update
+	diffc = diff --cached
 
 	# show files ignored by git
 	ign = ls-files -o -i --exclude-standard
