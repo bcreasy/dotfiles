@@ -32,6 +32,10 @@
 
 	# show files ignored by git
 	ign = ls-files -o -i --exclude-standard
+
+	# diff-so-fancy
+	df = "!f() { [ \"$GIT_PREFIX\" != \"\" ] && cd "$GIT_PREFIX"; git diff --color $@ | diff-so-fancy | less --tabs=4 -RFX; }; f"
+	sh = "!f() { [ \"$GIT_PREFIX\" != \"\" ] && cd "$GIT_PREFIX"; git show --color $@ | diff-so-fancy | less --tabs=4 -RFX; }; f"
 [pager]
-	diff = "diff-so-fancy | less --tabs=1,5 -RFX"
-	show = "diff-so-fancy | less --tabs=1,5 -RFX"
+#	diff = "diff-so-fancy | less --tabs=1,5 -RFX"
+#	show = "diff-so-fancy | less --tabs=1,5 -RFX"
