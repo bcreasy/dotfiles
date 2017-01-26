@@ -7,7 +7,7 @@ case "$(uname)" in
 	"FreeBSD")
 		alias ls="ls -F -G";;
 	"Linux")
-		alias ls="ls -F --color";;
+		alias ls="ls -N -F --color";;
 esac
 
 alias telnet="telnet -K"
